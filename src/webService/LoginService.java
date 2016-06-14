@@ -4,8 +4,10 @@ import java.util.ArrayList;
  
 import javax.ws.rs.Consumes;
 import javax.ws.rs.FormParam;
+import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
  
 import model.SecurityManager;
@@ -23,6 +25,19 @@ public class LoginService {
 return getAllUsersList(username, password);
  
 }
+
+@GET
+@Path("/logout")
+@Produces(MediaType.TEXT_PLAIN)
+public String logout() {
+
+// Code to Invalidate Session for the user.
+	
+	
+	return "Session Invalidated. User Logged Out Successfully";
+	
+
+}
  
 public String getAllUsersList(String username,String password)
  {
@@ -37,7 +52,7 @@ public String getAllUsersList(String username,String password)
  {
  if(userVO.getPassword().equals(password))
  {
- return "Logged in User:"+username;
+ return "Login Successfull. Logged in User:"+username;
  }
  }
  }
@@ -46,6 +61,6 @@ public String getAllUsersList(String username,String password)
  {
  System.out.println("error");
  }
- return "You are not a Valid User";
+ return "You are not a Valid User. Go Back and Try again.";
  }
 }

@@ -13,8 +13,7 @@ public ArrayList<UserVO> getAllUsers(Connection connection) throws Exception {
 ArrayList<UserVO> userList = new ArrayList<UserVO>();
 try {
 // String uname = request.getParameter("uname");
-PreparedStatement ps = connection
-.prepareStatement("SELECT * FROM user");
+PreparedStatement ps = connection.prepareStatement("SELECT * FROM user");
 // ps.setString(1,uname);
 ResultSet rs = ps.executeQuery();
 while (rs.next()) {
