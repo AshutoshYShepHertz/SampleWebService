@@ -12,6 +12,25 @@ POST API : http://jmeertes.cloudapp.net:8080/LoginWebService/REST/WebService/log
 
 GET API : http://jmeertes.cloudapp.net:8080/LoginWebService/REST/WebService/logout
 
+MySQL: 
+
+mysql> show tables;
++------------------+
+| Tables_in_userdb |
++------------------+
+| user             |
++------------------+
+1 row in set (0.00 sec)
+
+mysql> select * from user;
++----------+----------+
+| username | password |
++----------+----------+
+| ashu     | ashu     |
++----------+----------+
+1 row in set (0.00 sec)
+
+
 ========================================================================================================
 
 
@@ -44,7 +63,10 @@ POST Load Test:
         Longest transaction:            0.65
         Shortest transaction:           0.00
 
+    ===============================================================================================
     
+    Note: Hitting with Timers have the same affect as we are seeing in the above results.
+          DB is working properly.It is able to handle requests properly.
   GET Load Test:
 
   Simulated with 100 Threads/Second:
