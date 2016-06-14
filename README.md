@@ -25,6 +25,11 @@ POST Load Test:
     
     Graph is attached: POST REQUEST_Load Response.
     
+    
+    NOTE: Hitting the APIS with Timer is not affecting it much 
+          Database is behaving properly and is able to handle the load.No Delay coming from db side.
+          
+    
     Detailed Analysis:
         Transactions:                     806 hits
         Availability:                 100.00 %
