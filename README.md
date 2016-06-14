@@ -25,4 +25,19 @@ POST Load Test:
     
     Graph is attached: POST REQUEST_Load Response.
     
+    Detailed Analysis:
+        Transactions:                     806 hits
+        Availability:                 100.00 %
+        Elapsed time:                   5.29 secs
+        Data transferred:               0.04 MB
+        Response time:                  0.89 secs
+        Transaction rate:             152.36 trans/sec
+        Throughput:                     0.01 MB/sec
+        Concurrency:                   19.72
+        Successful transactions:         807
+        Failed transactions:               0
+        Longest transaction:            0.65
+        Shortest transaction:           0.00
+
+    
     
